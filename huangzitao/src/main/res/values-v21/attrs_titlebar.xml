@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleBar">
+        <!-- Display mode for TitleBar options. -->
+        <attr name="titlebarMode">
+            <!-- 通用型; the default value. -->
+            <enum name="general" value="0"/>
+            <!-- 右侧是一个Spinner -->
+            <enum name="right_button_is_spinner" value="1"/>
+            <!-- 包含一个搜索框 -->
+            <enum name="search_box" value="2"/>
+            <!-- 右侧有2个button -->
+            <enum name="right_double_button" value="3"/>
+        </attr>
+
+
+        <!-- 通用型属性 -->
+        <!-- 标题 text -->
+        <attr name="title_text" format="reference|string"/>
+        <!-- 标题 textSize -->
+        <attr name="title_textSize" format="dimension"/>
+        <!-- 标题 textColor -->
+        <attr name="title_textColor" format="color"/>
+        <!-- 标题 icon -->
+        <attr name="title_icon" format="reference"/>
+        <!-- 左按钮 -->
+        <attr name="left_button_icon" format="reference"/>
+        <attr name="left_button_text" format="reference|string"/>
+        <!-- 右按钮 -->
+        <attr name="right_button_icon" format="reference"/>
+        <attr name="right_button_text" format="reference|string"/>
+
+        <!-- right_button_is_spinner 属性 -->
+        <attr name="right_spinner_entries" format="reference"/>
+        <attr name="right_spinner_spinnerMode" format="enum">
+            <!-- Spinner options will be presented to the user as a dialog window. -->
+            <enum name="dialog" value="0"/>
+            <!-- Spinner options will be presented to the user as an inline dropdown
+                 anchored to the spinner widget itself. -->
+            <enum name="dropdown" value="1"/>
+        </attr>
+
+    </declare-styleable>
+</resources>

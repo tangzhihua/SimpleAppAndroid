@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myAttrs="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:id="@+id/userName_editText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical|left"
+            android:hint="手机号"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/background_dark"/>
+
+        <EditText
+            android:id="@+id/passWord_editText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical|left"
+            android:hint="请输入密码"
+            android:password="true"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/background_dark"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/get_verification_button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="获取手机验证码"
+                android:textColor="#E6A32D"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/verification_editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/get_verification_button"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:drawablePadding="10dp"
+                android:hint="请输入手机验证码"
+                android:textSize="15sp"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/argee_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="我已同意"/>
+
+            <TextView
+                android:id="@+id/user_agreement_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="33333"
+                android:textColor="#705C0A"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+
+            android:text="提交"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</LinearLayout>

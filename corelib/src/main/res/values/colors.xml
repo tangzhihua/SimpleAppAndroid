@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--按钮的文字颜色-灰-->
+    <color name="text_color_gray">#999999</color>
+    <!--按钮的文字颜色-黑-->
+    <color name="text_color_black">#666666</color>
+    <!--按钮的文字颜色-灰白-->
+    <color name="text_color_gray2">#EEE</color>
+    <!--按钮的文字颜色-白-->
+    <color name="text_color_white">#FFFFFF</color>
+    <!--按钮的文字颜色-橘黄-->
+    <color name="text_color_orange">#FF8401</color>
+    <!--按钮的文字颜色-蓝-->
+    <color name="text_color_blue">#3888e7</color>
+</resources>

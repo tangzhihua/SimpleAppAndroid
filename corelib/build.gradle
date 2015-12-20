@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.google.guava:guava:16.0.1'
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    compile 'com.loopj.android:android-async-http:1.4.8'
+    compile 'com.android.support:support-v4:22.2.1'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    //添加以下代码以声明类库的引用
+    compile files('libs/ksoap2-android-assembly-2.5.4-jar-with-dependencies.jar')
+}
+

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.skyduck.huangzitao"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="15" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- 闪光灯 插入车宝时 打开相当于手电 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 相机相关  扫描用 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.autofocus" />
+    <!-- 蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <!-- 读取短信内容 -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- 调用手机或耳机的麦克  用处待定 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 允许程序开机自动运行 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 允许一个程序收到广播后快速收到下一个广播 -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!-- 允许读写系统设置项 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <!-- ShareSDK所需要的权限 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 请求网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取当前WiFi接入的状态以及WLAN热点的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取网络信息状态，如当前的网络连接是否有效 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序写入外部存储，如SD卡上写文件 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序读取外部存储 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 允许程序管理AccountManager中的账户列表 -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- 有盟必须的权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5628583467e58ef4a7006dff" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="BoShiCaiJi" />
+
+        <activity
+            android:name=".activity.LaunchActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.ResetPasswordActivity" />
+        <activity android:name=".activity.AboutActivity" />
+        <activity android:name=".activity.UserInfoEditActivity" />
+        <activity android:name=".activity.FeedbackActivity" />
+        <activity android:name=".activity.NewsDetailsActivity" />
+        <activity android:name=".activity.TravelListActivity" />
+        <activity android:name=".activity.ImageAndVideoDetailsActivity" />
+        <activity android:name=".activity.ImageAndVideoShowActivity"></activity>
+    </application>
+
+</manifest>

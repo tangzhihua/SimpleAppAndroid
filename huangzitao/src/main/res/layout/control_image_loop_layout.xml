@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <!-- 没有数据时的提示语图片 -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@android:drawable/sym_def_app_icon"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/page_control_layout"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/holo_red_light"
+        android:orientation="horizontal"/>
+</RelativeLayout>

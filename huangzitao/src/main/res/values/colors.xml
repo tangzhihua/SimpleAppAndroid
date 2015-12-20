@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!-- 红色 -->
+    <color name="red">#F15353</color>
+    <!-- 按钮黄色 -->
+    <color name="button_yellow">#E6A32D</color>
+    <!-- 主题黄色 -->
+    <color name="theme_yellow">#FFCC00</color>
+    <!-- 按钮紫色 -->
+    <color name="button_zise">#836A82</color>
+    <!-- 灰线颜色 -->
+    <color name="line_hui">#E5E5E5</color>
+    <!-- 灰字颜色 -->
+    <color name="zi_hui">#A4A4A4</color>
+    <!-- 纯黑色 -->
+    <color name="black">#000000</color>
+    <!-- 背景灰 -->
+    <color name="bg_hui">#F5F5F5</color>
+    <!-- 忘记密码等字体颜色 -->
+    <color name="zi_password">#705C0A</color>
+    <!-- heihui字体颜色 -->
+    <color name="zi_hei">#312700</color>
+    <!-- 点击灰色 -->
+    <color name="click_hui">#DCDCDC</color>
+    <!-- 浅黄色 -->
+    <color name="click_qianhuang">#FBE075</color>
+    <!-- 浅蓝 -->
+    <color name="zi_qianlan">#4992d7</color>
+    <!-- 深灰色字体 -->
+    <color name="texts_color">#323232</color>
+
+
+
+    <!-- tab host 控件背景色 -->
+    <color name="tabhost_background_select_color">#08aed7</color>
+    <color name="tabhost_background_normal_color">#f2f4f6</color>
+    <!-- tab host 控件中的文字颜色 -->
+    <color name="tabhost_text_select_color">#FFCC00</color>
+    <color name="tabhost_text_normal_color">#6f7780</color>
+</resources>

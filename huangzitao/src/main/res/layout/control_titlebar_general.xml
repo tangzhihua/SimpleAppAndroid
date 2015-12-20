@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/theme_yellow">
+
+    <TextView
+        android:id="@+id/title_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="5dp"
+        android:drawableRight="@mipmap/ic_launcher"
+        android:text="标题"
+        android:textSize="20sp"/>
+
+    <!-- 左按钮 -->
+    <LinearLayout
+        android:id="@+id/left_button_click_view"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:id="@+id/left_button_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@mipmap/ic_launcher"
+            android:drawablePadding="5dp"
+            android:text="左按钮"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <!-- 右按钮 -->
+    <LinearLayout
+        android:id="@+id/right_button_click_view"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical|right"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/right_button_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/ic_launcher"
+            android:text="右按钮"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

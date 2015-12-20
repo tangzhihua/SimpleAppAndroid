@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:myAttrs="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/darker_gray"
+              android:orientation="vertical">
+
+
+    <!-- 用户信息面 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#FFCC00">
+
+        <!-- 未登录时显示的面板 -->
+        <LinearLayout
+            android:id="@+id/unlogin_userinfo_panel_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- tangzhihua : 主界面 tabhost 文字颜色 selector -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="true" android:color="@color/tabhost_text_select_color"/>
+    <item android:color="@color/tabhost_text_normal_color"/>
+
+</selector>
